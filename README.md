@@ -1,7 +1,8 @@
 # Project_3
 
-What is the most effective route for a highschool baseball player to take to become drafted into professional baseball
-(Based on the following data) 
+What is the most effective route for a highschool baseball player to take to become drafted into professional baseball?
+
+Based on the following data collected:
 
 
 
