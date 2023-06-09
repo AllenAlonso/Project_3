@@ -35,13 +35,14 @@
               <option value="uk">United Kingdom</option>
               <option value="mexico">Mexico</option>
               <option value="singapore">Singapore</option>
-              <option value="southAfrica">South Africa</option> onchange="optionChanged(this.value)"></select>
+              <option value="southAfrica">South Africa</option> onchange="optionChanged(this.value)">
+            </select>
           </div>
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">High School Information:</h3>
+            <h3 class="panel-title">High School Information:</h3>
             </div>
-            <div id="sample-metadata" class="panel-body">
+            <div id="metaDiv" class="panel-body">
             </div>
           </div>
         </div>
@@ -49,28 +50,29 @@
         <div class="col-md-2">
           <div class="well">
             <h5>Colleges:</h5>
-            <select id="selDataset">
+            <select id="selDataset2">
               <option value="australia">Australia</option>
               <option value="brazil">Brazil</option>
               <option value="uk">United Kingdom</option>
               <option value="mexico">Mexico</option>
               <option value="singapore">Singapore</option>
-              <option value="southAfrica">South Africa</option> onchange="optionChanged(this.value)"></select>
+              <option value="southAfrica">South Africa</option> onchange="optionChanged(this.value)">
+            </select>
           </div>
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">College Information:</h3>
+            <h3 class="panel-title">College Information:</h3>
             </div>
-            <div id="sample-metadata" class="panel-body">
+            <div id="metaDiv2" class="panel-body2">
             </div>
           </div>
         </div>
         <div class="col-md-5">
-          <div id="plot">
+          <div id="pie">
           </div>
         </div>
         <div class="col-md-5">
-          <div id="gauge">
+          <div id="pie2">
             <script>
             </script>
           </div>
@@ -92,6 +94,7 @@
   crossorigin=""></script>
     
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+    <script src="data.js"></script>
     <script src="app.js"></script>
   
   </body>
