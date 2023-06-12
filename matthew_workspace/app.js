@@ -57,8 +57,8 @@ d3.json(url).then(function (response) {
     }];
 
     let layout = {
-      height: 500,
-      width: 700
+      height: 400,
+      width: 500
     };
 
     Plotly.newPlot("pie", data, layout);
@@ -116,8 +116,8 @@ d3.json(url).then(function (response) {
     }];
 
     let layout = {
-      height: 500,
-      width: 700
+      height: 400,
+      width: 500
     };
 
     Plotly.newPlot("pie2", data, layout);
