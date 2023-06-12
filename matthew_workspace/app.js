@@ -37,150 +37,203 @@ d3.json(url).then(function (response) {
   // Add our marker cluster layer to the map.
   myMap.addLayer(markers);
 
-  // Create an array of each country's numbers
-  let australia = Object.values(data.australia);
-  let brazil = Object.values(data.brazil);
-  let uk = Object.values(data.uk);
-  let mexico = Object.values(data.mexico);
-  let singapore = Object.values(data.singapore);
-  let southAfrica = Object.values(data.southAfrica);
+// Create an array of each country's numbers
+let australia = Object.values(data.australia);
+let brazil = Object.values(data.brazil);
+let uk = Object.values(data.uk);
+let mexico = Object.values(data.mexico);
+let singapore = Object.values(data.singapore);
+let southAfrica = Object.values(data.southAfrica);
 
-  // Create an array of category labels
-  let labels = Object.keys(data.australia);
+// Create an array of category labels
+let labels = Object.keys(data.australia);
 
-  // Display the default plot
-  function init() {
-    let data = [{
-      values: australia,
-      labels: labels,
-      type: "pie"
-    }];
+// Display the default plot
+function init() {
+  let data = [{
+    values: australia,
+    labels: labels,
+    type: "pie"
+  }];
 
-    let layout = {
-      height: 400,
-      width: 500
+  let layout = {
+    title: {
+      text:'High Schools',
+      font: {
+        family: 'Courier New, monospace',
+        size: 24
+      },
+      xref: 'paper',
+      x: 0.05,
+    },
+    height: 400,
+    width: 500
+  };
+
+  Plotly.newPlot("pie", data, layout);
+}
+
+// On change to the DOM, call getData()
+d3.selectAll("#selDataset").on("change", getData);
+
+// Function called by DOM changes
+function getData() {
+  let dropdownMenu = d3.select("#selDataset");
+  // Assign the value of the dropdown menu option to a variable
+  let dataset = dropdownMenu.property("value");
+  // Initialize an empty array for the country's data
+  let data = [];
+
+  if (dataset == 'australia') {
+    data = australia;
+  }
+  else if (dataset == 'brazil') {
+    data = brazil;
+  }
+  else if (dataset == 'uk') {
+    data = uk;
+  }
+  else if (dataset == 'mexico') {
+    data = mexico;
+  }
+  else if (dataset == 'singapore') {
+    data = singapore;
+  }
+  else if (dataset == 'southAfrica') {
+    data = southAfrica;
+  }
+  // Call function to update the chart
+  updatePlotly(data);
+}
+
+// Update the restyled plot's values
+function updatePlotly(newdata) {
+  Plotly.restyle("pie", "values", [newdata]);
+}
+
+init();
+
+// Create an array of category labels
+let labels2 = Object.keys(data.australia);
+
+// Display the default plot
+function init2() {
+  let data = [{
+    values: australia,
+    labels: labels2,
+    type: "pie"
+  }];
+
+  let layout = {
+    title: {
+      text:'Colleges',
+      font: {
+        family: 'Courier New, monospace',
+        size: 24
+      },
+      xref: 'paper',
+      x: 0.05,
+    },
+    height: 400,
+    width: 500
+  };
+
+  Plotly.newPlot("pie2", data, layout);
+}
+
+// On change to the DOM, call getData2()
+d3.selectAll("#selDataset2").on("change", getData2);
+
+// Function called by DOM changes
+function getData2() {
+  let dropdownMenu = d3.select("#selDataset2");
+  // Assign the value of the dropdown menu option to a variable
+  let dataset = dropdownMenu.property("value");
+  // Initialize an empty array for the country's data
+  let data = [];
+
+  if (dataset == 'australia') {
+    data = australia;
+  }
+  else if (dataset == 'brazil') {
+    data = brazil;
+  }
+  else if (dataset == 'uk') {
+    data = uk;
+  }
+  else if (dataset == 'mexico') {
+    data = mexico;
+  }
+  else if (dataset == 'singapore') {
+    data = singapore;
+  }
+  else if (dataset == 'southAfrica') {
+    data = southAfrica;
+  }
+  // Call function to update the chart
+  updatePlotly2(data);
+}
+
+// Update the restyled plot's values
+function updatePlotly2(newdata) {
+  Plotly.restyle("pie2", "values", [newdata]);
+}
+
+init2();
+
+  // Add meta-data
+  let metaDiv = d3.select(".panel-body");
+
+  let personMetadata = data['australia']
+  
+  metaDiv.append('p').text('Domestic Health: ' + personMetadata["Domestic Health"]);
+  metaDiv.append('p').text('Education: ' + personMetadata["Education"]);
+  metaDiv.append('p').text('Final Consumption: ' + personMetadata["Final Consumption"]);
+  metaDiv.append('p').text('Research and Development: ' + personMetadata["Research and Development"]);
+
+
+  // Add meta-data
+  let metaDiv2 = d3.select(".panel-body2");
+
+  let personMetadata2 = data['australia']
+  
+  metaDiv2.append('p').text('Domestic Health: ' + personMetadata2["Domestic Health"]);
+  metaDiv2.append('p').text('Education: ' + personMetadata2["Education"]);
+  metaDiv2.append('p').text('Final Consumption: ' + personMetadata2["Final Consumption"]);
+  metaDiv2.append('p').text('Research and Development: ' + personMetadata2["Research and Development"]);
+
+
+
+  let trace1 = {
+    x: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
+    y: ["school1", "school2", "school3", "school4", "school5", "school6", "school7", "school8", "school9", "school10"],
+    text: ["school1", "school2", "school3", "school4", "school5", "school6", "school7", "school8", "school9", "school10"],
+    type: 'bar',
+    orientation: "h"
+  };
+    
+  let formattedData = [trace1];
+    
+  let layout = {
+      margin: {
+        l: 100,
+        r: 100,
+        t: 100,
+        b: 100
+      },
+      title: {
+        text:'Top 10 Schools',
+        font: {
+          family: 'Courier New, monospace',
+          size: 24
+        },
+        xref: 'paper',
+        x: 0.05,
+      },
+      xaxis: { title: 'Number of Students Drafted' },
+      yaxis: { title: 'Schools' },
     };
 
-    Plotly.newPlot("pie", data, layout);
-  }
-
-  // On change to the DOM, call getData()
-  d3.selectAll("#selDataset").on("change", getData);
-
-  // Function called by DOM changes
-  function getData() {
-    let dropdownMenu = d3.select("#selDataset");
-    // Assign the value of the dropdown menu option to a variable
-    let dataset = dropdownMenu.property("value");
-    // Initialize an empty array for the country's data
-    let data = [];
-
-    if (dataset == 'australia') {
-      data = australia;
-    }
-    else if (dataset == 'brazil') {
-      data = brazil;
-    }
-    else if (dataset == 'uk') {
-      data = uk;
-    }
-    else if (dataset == 'mexico') {
-      data = mexico;
-    }
-    else if (dataset == 'singapore') {
-      data = singapore;
-    }
-    else if (dataset == 'southAfrica') {
-      data = southAfrica;
-    }
-    // Call function to update the chart
-    updatePlotly(data);
-  }
-
-  // Update the restyled plot's values
-  function updatePlotly(newdata) {
-    Plotly.restyle("pie", "values", [newdata]);
-  }
-
-  init();
-
-  // Create an array of category labels
-  let labels2 = Object.keys(data.australia);
-
-  // Display the default plot
-  function init2() {
-    let data = [{
-      values: australia,
-      labels: labels2,
-      type: "pie"
-    }];
-
-    let layout = {
-      height: 400,
-      width: 500
-    };
-
-    Plotly.newPlot("pie2", data, layout);
-  }
-
-  // On change to the DOM, call getData2()
-  d3.selectAll("#selDataset2").on("change", getData2);
-
-  // Function called by DOM changes
-  function getData2() {
-    let dropdownMenu = d3.select("#selDataset2");
-    // Assign the value of the dropdown menu option to a variable
-    let dataset = dropdownMenu.property("value");
-    // Initialize an empty array for the country's data
-    let data = [];
-
-    if (dataset == 'australia') {
-      data = australia;
-    }
-    else if (dataset == 'brazil') {
-      data = brazil;
-    }
-    else if (dataset == 'uk') {
-      data = uk;
-    }
-    else if (dataset == 'mexico') {
-      data = mexico;
-    }
-    else if (dataset == 'singapore') {
-      data = singapore;
-    }
-    else if (dataset == 'southAfrica') {
-      data = southAfrica;
-    }
-    // Call function to update the chart
-    updatePlotly2(data);
-  }
-
-  // Update the restyled plot's values
-  function updatePlotly2(newdata) {
-    Plotly.restyle("pie2", "values", [newdata]);
-  }
-
-  init2();
-
-    // Add meta-data
-    let metaDiv = d3.select(".panel-body");
-  
-    let personMetadata = data['australia']
-    
-    metaDiv.append('p').text('Domestic Health: ' + personMetadata["Domestic Health"]);
-    metaDiv.append('p').text('Education: ' + personMetadata["Education"]);
-    metaDiv.append('p').text('Final Consumption: ' + personMetadata["Final Consumption"]);
-    metaDiv.append('p').text('Research and Development: ' + personMetadata["Research and Development"]);
-
-
-    // Add meta-data
-    let metaDiv2 = d3.select(".panel-body2");
-  
-    let personMetadata2 = data['australia']
-    
-    metaDiv2.append('p').text('Domestic Health: ' + personMetadata2["Domestic Health"]);
-    metaDiv2.append('p').text('Education: ' + personMetadata2["Education"]);
-    metaDiv2.append('p').text('Final Consumption: ' + personMetadata2["Final Consumption"]);
-    metaDiv2.append('p').text('Research and Development: ' + personMetadata2["Research and Development"]);
+  Plotly.newPlot("bar", formattedData, layout);
 });
+
