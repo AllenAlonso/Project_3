@@ -203,37 +203,48 @@ init2();
   metaDiv2.append('p').text('Research and Development: ' + personMetadata2["Research and Development"]);
 
 
+  fetch('./the_top_10_colleges.json')
+  .then(response => response.json())
+  .then(data => {
 
-  let trace1 = {
-    x: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
-    y: ["school1", "school2", "school3", "school4", "school5", "school6", "school7", "school8", "school9", "school10"],
-    text: ["school1", "school2", "school3", "school4", "school5", "school6", "school7", "school8", "school9", "school10"],
-    type: 'bar',
-    orientation: "h"
-  };
-    
-  let formattedData = [trace1];
-    
-  let layout = {
-      margin: {
-        l: 100,
-        r: 100,
-        t: 100,
-        b: 100
-      },
-      title: {
-        text:'Top 10 Schools',
-        font: {
-          family: 'Courier New, monospace',
-          size: 24
-        },
-        xref: 'paper',
-        x: 0.05,
-      },
-      xaxis: { title: 'Number of Students Drafted' },
-      yaxis: { title: 'Schools' },
+    let trace1 = {
+      x: Object.values(data),
+      y: Object.keys(data),
+      text: Object.keys(data),
+      type: 'bar',
+      orientation: "h"
     };
+      
+    let formattedData = [trace1];
+      
+    let layout = {
+        margin: {
+          l: 100,
+          r: 100,
+          t: 100,
+          b: 100
+        },
+        title: {
+          text:'Top 10 Schools',
+          font: {
+            family: 'Courier New, monospace',
+            size: 24
+          },
+          xref: 'paper',
+          x: 0.05,
+        },
+        xaxis: { title: 'Number of Students Drafted' },
+        yaxis: { title: 'Schools' },
+      };
+  
+    Plotly.newPlot("bar", formattedData, layout);
+    // Process the JSON data here
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
 
-  Plotly.newPlot("bar", formattedData, layout);
+  console.log(data)
 });
 
