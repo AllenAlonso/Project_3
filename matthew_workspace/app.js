@@ -38,20 +38,33 @@ d3.json(url).then(function (response) {
   myMap.addLayer(markers);
 
 // Create an array of each country's numbers
-let australia = Object.values(data.australia);
-let brazil = Object.values(data.brazil);
-let uk = Object.values(data.uk);
-let mexico = Object.values(data.mexico);
-let singapore = Object.values(data.singapore);
-let southAfrica = Object.values(data.southAfrica);
+let virginia = Object.values(data.virginia);
+let arizona = Object.values(data.arizona);
+let kentucky = Object.values(data.kentucky);
+let vanderbilt = Object.values(data.vanderbilt);
+let oregon_state = Object.values(data.oregon_state);
+let tennessee = Object.values(data.tennessee);
+let texas_tech = Object.values(data.texas_tech);
+let florida = Object.values(data.florida);
+let louisville = Object.values(data.louisville);
+let img_academy = Object.values(data.img_academy);
+let carlos_beltran_baseball_academy = Object.values(data.carlos_beltran_baseball_academy);
+let leadership_christian_academy = Object.values(data.leadership_christian_academy);
+let pj_education_school = Object.values(data.pj_education_school);
+let puerto_rico_baseball_academy = Object.values(data.puerto_rico_baseball_academy);
+let jserra_catholic = Object.values(data.jserra_catholic);
+let calvary_christian_academy = Object.values(data.calvary_christian_academy);
+let american_heritage = Object.values(data.american_heritage);
+let tnxl_academy = Object.values(data.tnxl_academy);
+let orange_lutheran = Object.values(data.orange_lutheran);
 
 // Create an array of category labels
-let labels = Object.keys(data.australia);
+let labels = Object.keys(data.virginia);
 
 // Display the default plot
 function init() {
   let data = [{
-    values: australia,
+    values: virginia,
     labels: labels,
     type: "pie"
   }];
@@ -61,12 +74,12 @@ function init() {
       text:'High Schools',
       font: {
         family: 'Courier New, monospace',
-        size: 24
+        size: 20
       },
       xref: 'paper',
       x: 0.05,
     },
-    height: 400,
+    height: 500,
     width: 500
   };
 
@@ -84,23 +97,35 @@ function getData() {
   // Initialize an empty array for the country's data
   let data = [];
 
-  if (dataset == 'australia') {
-    data = australia;
+  if (dataset == 'img_academy') {
+    data = img_academy;
   }
-  else if (dataset == 'brazil') {
-    data = brazil;
+  else if (dataset == 'carlos_beltran_baseball_academy') {
+    data = carlos_beltran_baseball_academy;
   }
-  else if (dataset == 'uk') {
-    data = uk;
+  else if (dataset == 'leadership_christian_academy') {
+    data = leadership_christian_academy;
   }
-  else if (dataset == 'mexico') {
-    data = mexico;
+  else if (dataset == 'pj_education_school') {
+    data = pj_education_school;
   }
-  else if (dataset == 'singapore') {
-    data = singapore;
+  else if (dataset == 'puerto_rico_baseball_academy') {
+    data = puerto_rico_baseball_academy;
   }
-  else if (dataset == 'southAfrica') {
-    data = southAfrica;
+  else if (dataset == 'jserra_catholic') {
+    data = jserra_catholic;
+  }
+  else if (dataset == 'calvary_christian_academy') {
+    data = calvary_christian_academy;
+  }
+  else if (dataset == 'american_heritage') {
+    data = american_heritage;
+  }
+  else if (dataset == 'tnxl_academy') {
+    data = tnxl_academy;
+  }
+  else if (dataset == 'orange_lutheran') {
+    data = orange_lutheran;
   }
   // Call function to update the chart
   updatePlotly(data);
@@ -114,12 +139,12 @@ function updatePlotly(newdata) {
 init();
 
 // Create an array of category labels
-let labels2 = Object.keys(data.australia);
+let labels2 = Object.keys(data.virginia);
 
 // Display the default plot
 function init2() {
   let data = [{
-    values: australia,
+    values: virginia,
     labels: labels2,
     type: "pie"
   }];
@@ -129,12 +154,12 @@ function init2() {
       text:'Colleges',
       font: {
         family: 'Courier New, monospace',
-        size: 24
+        size: 20
       },
       xref: 'paper',
       x: 0.05,
     },
-    height: 400,
+    height: 500,
     width: 500
   };
 
@@ -152,23 +177,35 @@ function getData2() {
   // Initialize an empty array for the country's data
   let data = [];
 
-  if (dataset == 'australia') {
-    data = australia;
+  if (dataset == 'virginia') {
+    data = virginia;
   }
-  else if (dataset == 'brazil') {
-    data = brazil;
+  else if (dataset == 'arizona') {
+    data = arizona;
   }
-  else if (dataset == 'uk') {
-    data = uk;
+  else if (dataset == 'kentucky') {
+    data = kentucky;
   }
-  else if (dataset == 'mexico') {
-    data = mexico;
+  else if (dataset == 'vanderbilt') {
+    data = vanderbilt;
   }
-  else if (dataset == 'singapore') {
-    data = singapore;
+  else if (dataset == 'oregon_state') {
+    data = oregon_state;
   }
-  else if (dataset == 'southAfrica') {
-    data = southAfrica;
+  else if (dataset == 'tennessee') {
+    data = tennessee;
+  }
+  else if (dataset == 'texas_tech') {
+    data = texas_tech;
+  }
+  else if (dataset == 'florida') {
+    data = florida;
+  }
+  else if (dataset == 'louisville') {
+    data = louisville;
+  }
+  else if (dataset == 'arkansas') {
+    data = arkansas;
   }
   // Call function to update the chart
   updatePlotly2(data);
@@ -184,7 +221,7 @@ init2();
   // Add meta-data
   let metaDiv = d3.select(".panel-body");
 
-  let personMetadata = data['australia']
+  let personMetadata = data['virginia']
   
   metaDiv.append('p').text('Domestic Health: ' + personMetadata["Domestic Health"]);
   metaDiv.append('p').text('Education: ' + personMetadata["Education"]);
@@ -195,7 +232,7 @@ init2();
   // Add meta-data
   let metaDiv2 = d3.select(".panel-body2");
 
-  let personMetadata2 = data['australia']
+  let personMetadata2 = data['virginia']
   
   metaDiv2.append('p').text('Domestic Health: ' + personMetadata2["Domestic Health"]);
   metaDiv2.append('p').text('Education: ' + personMetadata2["Education"]);
@@ -225,7 +262,50 @@ init2();
           b: 100
         },
         title: {
-          text:'Top 10 Schools',
+          text:'Top 10 Colleges',
+          font: {
+            family: 'Courier New, monospace',
+            size: 20
+          },
+          xref: 'paper',
+          x: 0.05,
+        },
+        xaxis: { title: 'Number of Students Drafted' },
+        yaxis: { title: 'Schools' },
+      };
+  
+    Plotly.newPlot("bar", formattedData, layout);
+    // Process the JSON data here
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+  console.log(data)
+  fetch('./the_top_10_HS.json')
+  .then(response => response.json())
+  .then(data => {
+
+    let trace2 = {
+      x: Object.values(data),
+      y: Object.keys(data),
+      text: Object.keys(data),
+      type: 'bar',
+      orientation: "h"
+    };
+      
+    let formattedData = [trace2];
+      
+    let layout = {
+        margin: {
+          l: 400,
+          r: 100,
+          t: 100,
+          b: 100
+        },
+        title: {
+          text:'Top 10 High Schools',
           font: {
             family: 'Courier New, monospace',
             size: 24
@@ -237,7 +317,7 @@ init2();
         yaxis: { title: 'Schools' },
       };
   
-    Plotly.newPlot("bar", formattedData, layout);
+    Plotly.newPlot("bar2", formattedData, layout);
     // Process the JSON data here
     console.log(data);
   })
