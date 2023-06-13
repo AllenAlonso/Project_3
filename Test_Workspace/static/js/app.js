@@ -34,27 +34,9 @@ d3.json(url).then(function (response) {
   // Add our marker cluster layer to the map.
   myMap.addLayer(markers);
 
-// Create an array of each country's numbers
+// Grab defaults
 let arkansas = Object.values(data.arkansas);
-let virginia = Object.values(data.virginia);
-let arizona = Object.values(data.arizona);
-let kentucky = Object.values(data.kentucky);
-let vanderbilt = Object.values(data.vanderbilt);
-let oregon_state = Object.values(data.oregon_state);
-let tennessee = Object.values(data.tennessee);
-let texas_tech = Object.values(data.texas_tech);
-let florida = Object.values(data.florida);
-let louisville = Object.values(data.louisville);
 let img_academy = Object.values(data.img_academy);
-let carlos_beltran_baseball_academy = Object.values(data.carlos_beltran_baseball_academy);
-let leadership_christian_academy = Object.values(data.leadership_christian_academy);
-let pj_education_school = Object.values(data.pj_education_school);
-let puerto_rico_baseball_academy = Object.values(data.puerto_rico_baseball_academy);
-let jserra_catholic = Object.values(data.jserra_catholic);
-let calvary_christian_academy = Object.values(data.calvary_christian_academy);
-let american_heritage = Object.values(data.american_heritage);
-let tnxl_academy = Object.values(data.tnxl_academy);
-let orange_lutheran = Object.values(data.orange_lutheran);
 
 // Create an array of category labels
 let labels = Object.keys(data.virginia);
@@ -62,7 +44,7 @@ let labels = Object.keys(data.virginia);
 // Display the default plot
 function init() {
   let data = [{
-    values: virginia,
+    values: img_academy,
     labels: labels,
     type: "pie"
   }];
@@ -87,47 +69,6 @@ function init() {
 // On change to the DOM, call getData()
 d3.selectAll("#selDataset").on("change", getData);
 
-// Function called by DOM changes
-function getData() {
-  let dropdownMenu = d3.select("#selDataset");
-  // Assign the value of the dropdown menu option to a variable
-  let dataset = dropdownMenu.property("value");
-  // Initialize an empty array for the country's data
-  let data = [];
-
-  if (dataset == 'img_academy') {
-    data = img_academy;
-  }
-  else if (dataset == 'carlos_beltran_baseball_academy') {
-    data = carlos_beltran_baseball_academy;
-  }
-  else if (dataset == 'leadership_christian_academy') {
-    data = leadership_christian_academy;
-  }
-  else if (dataset == 'pj_education_school') {
-    data = pj_education_school;
-  }
-  else if (dataset == 'puerto_rico_baseball_academy') {
-    data = puerto_rico_baseball_academy;
-  }
-  else if (dataset == 'jserra_catholic') {
-    data = jserra_catholic;
-  }
-  else if (dataset == 'calvary_christian_academy') {
-    data = calvary_christian_academy;
-  }
-  else if (dataset == 'american_heritage') {
-    data = american_heritage;
-  }
-  else if (dataset == 'tnxl_academy') {
-    data = tnxl_academy;
-  }
-  else if (dataset == 'orange_lutheran') {
-    data = orange_lutheran;
-  }
-  // Call function to update the chart
-  updatePlotly(data);
-}
 
 // Update the restyled plot's values
 function updatePlotly(newdata) {
@@ -142,7 +83,7 @@ let labels2 = Object.keys(data.virginia);
 // Display the default plot
 function init2() {
   let data = [{
-    values: virginia,
+    values: arkansas,
     labels: labels2,
     type: "pie"
   }];
@@ -167,48 +108,6 @@ function init2() {
 // On change to the DOM, call getData2()
 d3.selectAll("#selDataset2").on("change", getData2);
 
-// Function called by DOM changes
-function getData2() {
-  let dropdownMenu = d3.select("#selDataset2");
-  // Assign the value of the dropdown menu option to a variable
-  let dataset = dropdownMenu.property("value");
-  // Initialize an empty array for the country's data
-  let data = [];
-
-  if (dataset == 'virginia') {
-    data = virginia;
-  }
-  else if (dataset == 'arizona') {
-    data = arizona;
-  }
-  else if (dataset == 'kentucky') {
-    data = kentucky;
-  }
-  else if (dataset == 'vanderbilt') {
-    data = vanderbilt;
-  }
-  else if (dataset == 'oregon_state') {
-    data = oregon_state;
-  }
-  else if (dataset == 'tennessee') {
-    data = tennessee;
-  }
-  else if (dataset == 'texas_tech') {
-    data = texas_tech;
-  }
-  else if (dataset == 'florida') {
-    data = florida;
-  }
-  else if (dataset == 'louisville') {
-    data = louisville;
-  }
-  else if (dataset == 'arkansas') {
-    data = arkansas;
-  }
-  // Call function to update the chart
-  updatePlotly2(data);
-}
-
 // Update the restyled plot's values
 function updatePlotly2(newdata) {
   Plotly.restyle("pie2", "values", [newdata]);
@@ -216,36 +115,87 @@ function updatePlotly2(newdata) {
 
 init2();
 
-  // Add meta-data
+  // Add initial meta-data 1
   let metaDiv = d3.select(".panel-body");
 
-  let personMetadata = data['virginia']
+  let personMetadata = data['img_academy']
   
-  metaDiv.append('p').text('Domestic Health: ' + personMetadata["Domestic Health"]);
-  metaDiv.append('p').text('Education: ' + personMetadata["Education"]);
-  metaDiv.append('p').text('Final Consumption: ' + personMetadata["Final Consumption"]);
-  metaDiv.append('p').text('Research and Development: ' + personMetadata["Research and Development"]);
+  metaDiv.append('p').text('Rookie: ' + personMetadata["Rookie"]);
+  metaDiv.append('p').text('A: ' + personMetadata["A"]);
+  metaDiv.append('p').text('A+: ' + personMetadata["A+"]);
+  metaDiv.append('p').text('AA: ' + personMetadata["AA"]);
+  metaDiv.append('p').text('AAA: ' + personMetadata["AAA"]);
+  metaDiv.append('p').text('MLB: ' + personMetadata["MLB"]);
 
-
-  // Add meta-data
+  //  Add initial meta-data 2
   let metaDiv2 = d3.select(".panel-body2");
 
-  let personMetadata2 = data['virginia']
+  let personMetadata2 = data['arkansas']
   
-  metaDiv2.append('p').text('Domestic Health: ' + personMetadata2["Domestic Health"]);
-  metaDiv2.append('p').text('Education: ' + personMetadata2["Education"]);
-  metaDiv2.append('p').text('Final Consumption: ' + personMetadata2["Final Consumption"]);
-  metaDiv2.append('p').text('Research and Development: ' + personMetadata2["Research and Development"]);
+  metaDiv2.append('p').text('Rookie: ' + personMetadata2["Rookie"]);
+  metaDiv2.append('p').text('A: ' + personMetadata2["A"]);
+  metaDiv2.append('p').text('A+: ' + personMetadata2["A+"]);
+  metaDiv2.append('p').text('AA: ' + personMetadata2["AA"]);
+  metaDiv2.append('p').text('AAA: ' + personMetadata2["AAA"]);
+  metaDiv2.append('p').text('MLB: ' + personMetadata2["MLB"]);
+  
+
+  // Handle user selection for meta data 1
+  function updateMetadata(highschool) {
+    let metaDiv = d3.select("#metaDiv");
+    metaDiv.html("");
+    let personMetadata = data[highschool];
+    metaDiv.append('p').text('Rookie: ' + personMetadata["Rookie"]);
+    metaDiv.append('p').text('A: ' + personMetadata["A"]);
+    metaDiv.append('p').text('A+: ' + personMetadata["A+"]);
+    metaDiv.append('p').text('AA: ' + personMetadata["AA"]);
+    metaDiv.append('p').text('AAA: ' + personMetadata["AAA"]);
+    metaDiv.append('p').text('MLB: ' + personMetadata["MLB"]);
+  }
+
+  // // Get selected option and update metadata
+  function getData() {
+    let selectedOption = d3.select("#selDataset").property("value");
+    updateMetadata(selectedOption);
+
+    let schoolDataArray = Object.values(data[selectedOption]);
+    updatePlotly(schoolDataArray);
+  }
+    
+  // Handle user selection for meta data 2
+  function updateMetadata2(college) {
+    let metaDiv2 = d3.select("#metaDiv2");
+    metaDiv2.html("");
+    let personMetadata2 = data[college];
+    metaDiv2.append('p').text('Rookie: ' + personMetadata2["Rookie"]);
+    metaDiv2.append('p').text('A: ' + personMetadata2["A"]);
+    metaDiv2.append('p').text('A+: ' + personMetadata2["A+"]);
+    metaDiv2.append('p').text('AA: ' + personMetadata2["AA"]);
+    metaDiv2.append('p').text('AAA: ' + personMetadata2["AAA"]);
+    metaDiv2.append('p').text('MLB: ' + personMetadata2["MLB"]);
+  }
+    // // Get selected option and update metadata
+  function getData2() {
+    let selectedOption2 = d3.select("#selDataset2").property("value");
+    updateMetadata2(selectedOption2);
+
+    let schoolDataArray2 = Object.values(data[selectedOption2]);
+    updatePlotly2(schoolDataArray2);
+  }
 
 
   fetch('/college')
   .then(response => response.json())
   .then(data => {
 
+    //lodash sorting
+    const sortedObj = _.fromPairs(_.sortBy(_.toPairs(data), [(entry) => entry[1]]));
+
+
     let trace1 = {
-      x: Object.values(data),
-      y: Object.keys(data),
-      text: Object.keys(data),
+      x: Object.values(sortedObj),
+      y: Object.keys(sortedObj),
+      text: Object.keys(sortedObj),
       type: 'bar',
       orientation: "h"
     };
@@ -285,10 +235,13 @@ init2();
   .then(response => response.json())
   .then(data => {
 
+    //lodash sorting
+    const sortedObj = _.fromPairs(_.sortBy(_.toPairs(data), [(entry) => entry[1]]));
+
     let trace2 = {
-      x: Object.values(data),
-      y: Object.keys(data),
-      text: Object.keys(data),
+      x: Object.values(sortedObj),
+      y: Object.keys(sortedObj),
+      text: Object.keys(sortedObj),
       type: 'bar',
       orientation: "h"
     };

@@ -70,7 +70,7 @@
           <div class="panel-heading">
             <h3 class="panel-title">College Information:</h3>
           </div>
-          <div id="metaDiv2" class="panel-body">
+          <div id="metaDiv2" class="panel-body2">
           </div>
         </div>
       </div>
@@ -104,6 +104,7 @@
   </div>
   <div id="map"></div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script
@@ -114,45 +115,6 @@
     src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
   <script src="static/js/data.js"></script>
   <script src="static/js/app.js"></script>
-  <script>
-    // Display metadata
-    function updateMetadata(country) {
-      let metaDiv = d3.select("#metaDiv");
-      metaDiv.html("");
-      let personMetadata = data[country];
-      metaDiv.append('p').text('Domestic Health: ' + personMetadata["Domestic Health"]);
-      metaDiv.append('p').text('Education: ' + personMetadata["Education"]);
-      metaDiv.append('p').text('Final Consumption: ' + personMetadata["Final Consumption"]);
-      metaDiv.append('p').text('Research and Development: ' + personMetadata["Research and Development"]);
-    }
-
-    // Display metadata
-    function updateMetadata2(country) {
-      let metaDiv2 = d3.select("#metaDiv2");
-      metaDiv2.html("");
-      let personMetadata2 = data[country];
-      metaDiv2.append('p').text('Domestic Health: ' + personMetadata2["Domestic Health"]);
-      metaDiv2.append('p').text('Education: ' + personMetadata2["Education"]);
-      metaDiv2.append('p').text('Final Consumption: ' + personMetadata2["Final Consumption"]);
-      metaDiv2.append('p').text('Research and Development: ' + personMetadata2["Research and Development"]);
-    }
-
-    // Get selected option and update metadata
-    function getData() {
-      let selectedOption = d3.select("#selDataset").property("value");
-      updateMetadata(selectedOption);
-    }
-
-    // Get selected option and update metadata
-    function getData2() {
-      let selectedOption2 = d3.select("#selDataset2").property("value");
-      updateMetadata2(selectedOption2);
-    }
-
-    // Initialize metadata
-    getData();
-    getData2();
-  </script>
 
 
 </body>

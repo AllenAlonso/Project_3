@@ -90,12 +90,12 @@ let data = {
     },
 
     img_academy: {
-        "Rookie": 84241,
-        "A": 84241,
-        "A+": 68160,
-        "AA": 247409,
-        "AAA": 24918,
-        "MLB": 5,
+        "Rookie": 123,
+        "A": 234,
+        "A+": 345,
+        "AA": 546,
+        "AAA": 567,
+        "MLB": 8,
     },
 
     carlos_beltran_baseball_academy: {
