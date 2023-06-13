@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MLB Draft Beginnings</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css"
+  >
+  <link rel="stylesheet" type="text/css"
+    href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>The Pathway to Becoming Drafted in the MLB</h1>
+        <p>Our Guide to the Best High Schools and Colleges Most Likely to GET YOU DRAFTED</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="well">
+          <h5>High Schools:</h5>
+          <select id="selDataset" onchange="getData()">
+            <option value="img_academy">1. IMG Academy</option>
+            <option value="carlos_beltran_baseball_academy">2. Carlos Beltran Baseball Academy</option>
+            <option value="leadership_christian_academy">3. Leadership Christian Academy</option>
+            <option value="pj_education_school">4. PJ Education School</option>
+            <option value="puerto_rico_baseball_academy">5. Puerto Rico Baseball Academy</option>
+            <option value="jserra_catholic">6. JSerra Catholic</option>
+            <option value="calvary_christian_academy">7. Calvary Christian Academy</option>
+            <option value="american_heritage">8. American Heritage</option>
+            <option value="tnxl_academy">9. TNXL Academy</option>
+            <option value="orange_lutheran">10. Orange Lutheran</option>
+          </select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">High School Information:</h3>
+          </div>
+          <div id="metaDiv" class="panel-body">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Colleges:</h5>
+          <select id="selDataset2" onchange="getData2()">
+            <option value="arkansas">1. Arkansas</option>
+            <option value="louisville">2. Louisville</option>
+            <option value="florida">3. Florida</option>
+            <option value="texas_tech">4. Texas Tech</option>
+            <option value="tennessee">5. Tennessee</option>
+            <option value="oregon_state">6. Oregon State</option>
+            <option value="vanderbilt">7. Vanderbilt</option>
+            <option value="kentucky">8. Kentucky</option>
+            <option value="arizona">9. Arizona</option>
+            <option value="virginia">10. Virginia</option>
+          </select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">College Information:</h3>
+          </div>
+          <div id="metaDiv2" class="panel-body">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="pie">
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div id="pie2">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="bar">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bar2">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="map"></div>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script type="text/javascript"
+    src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+  <script>
+    // Display metadata
+    function updateMetadata(country) {
+      let metaDiv = d3.select("#metaDiv");
+      metaDiv.html("");
+      let personMetadata = data[country];
+      metaDiv.append('p').text('Domestic Health: ' + personMetadata["Domestic Health"]);
+      metaDiv.append('p').text('Education: ' + personMetadata["Education"]);
+      metaDiv.append('p').text('Final Consumption: ' + personMetadata["Final Consumption"]);
+      metaDiv.append('p').text('Research and Development: ' + personMetadata["Research and Development"]);
+    }
+
+    // Display metadata
+    function updateMetadata2(country) {
+      let metaDiv2 = d3.select("#metaDiv2");
+      metaDiv2.html("");
+      let personMetadata2 = data[country];
+      metaDiv2.append('p').text('Domestic Health: ' + personMetadata2["Domestic Health"]);
+      metaDiv2.append('p').text('Education: ' + personMetadata2["Education"]);
+      metaDiv2.append('p').text('Final Consumption: ' + personMetadata2["Final Consumption"]);
+      metaDiv2.append('p').text('Research and Development: ' + personMetadata2["Research and Development"]);
+    }
+
+    // Get selected option and update metadata
+    function getData() {
+      let selectedOption = d3.select("#selDataset").property("value");
+      updateMetadata(selectedOption);
+    }
+
+    // Get selected option and update metadata
+    function getData2() {
+      let selectedOption2 = d3.select("#selDataset2").property("value");
+      updateMetadata2(selectedOption2);
+    }
+
+    // Initialize metadata
+    getData();
+    getData2();
+  </script>
+
+
+</body>
+
+</html>

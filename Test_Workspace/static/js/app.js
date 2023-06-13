@@ -12,7 +12,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Store the API query variables.
 // For docs, refer to https://dev.socrata.com/docs/queries/where.html.
 // And, refer to https://dev.socrata.com/foundry/data.cityofnewyork.us/erm2-nwe9.
-let base = "./baseball_drafts_location.json";
+let base = "api/v1.0/baseballdata";
 
 // Assemble the API query URL.
 let url = base;
@@ -26,8 +26,8 @@ d3.json(url).then(function (response) {
   // Loop through the data.
   response.forEach(draft => {
     if (draft.PlayerName) {
-      let loc = [draft.PlayerName.coordinates[1], draft.Playername.coordinates[0]]
-      markers.addLayer(L.marker(loc).bindPopup(draft.descriptor))
+      let loc = [draft.Latitude, draft.Longitude]
+      markers.addLayer(L.marker(loc).bindPopup(draft.School))
     }
   })
 
@@ -237,7 +237,7 @@ init2();
   metaDiv2.append('p').text('Research and Development: ' + personMetadata2["Research and Development"]);
 
 
-  fetch('./the_top_10_colleges.json')
+  fetch('/college')
   .then(response => response.json())
   .then(data => {
 
@@ -280,7 +280,7 @@ init2();
   });
 
   console.log(data)
-  fetch('./the_top_10_HS.json')
+  fetch('/highschool')
   .then(response => response.json())
   .then(data => {
 
