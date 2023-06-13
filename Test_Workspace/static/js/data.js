@@ -9,135 +9,173 @@ let data = {
     },
 
     arizona: {
-        "Domestic Health": 81832,
-        "Education": 130424,
-        "Final Consumption": 416043,
-        "Research and Development": 22573
+        "Rookie": 20000,
+        "A": 30000,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 2300,
+        "MLB": 150,
     },
 
     kentucky: {
-        "Domestic Health": 207917,
-        "Education": 144950,
-        "Final Consumption": 498433,
-        "Research and Development": 44736
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     vanderbilt: {
-        "Domestic Health": 32947,
-        "Education": 52362,
-        "Final Consumption": 134626,
-        "Research and Development": 3806
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     oregon_state: {
-        "Domestic Health": 7312,
-        "Education": 9504,
-        "Final Consumption": 34940,
-        "Research and Development": 6608
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     tennessee: {
-        "Domestic Health": 15215,
-        "Education": 21368,
-        "Final Consumption": 72704,
-        "Research and Development": 2909
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     texas_tech: {
-        "Domestic Health": 15215,
-        "Education": 21368,
-        "Final Consumption": 72704,
-        "Research and Development": 2909
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     florida: {
-        "Domestic Health": 15215,
-        "Education": 21368,
-        "Final Consumption": 72704,
-        "Research and Development": 2909
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     louisville: {
-        "Domestic Health": 15215,
-        "Education": 21368,
-        "Final Consumption": 72704,
-        "Research and Development": 2909
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     arkansas: {
-        "Domestic Health": 15215,
-        "Education": 21368,
-        "Final Consumption": 72704,
-        "Research and Development": 2909
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     img_academy: {
-        "Domestic Health": 84241,
-        "Education": 68160,
-        "Final Consumption": 247409,
-        "Research and Development": 24918
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     carlos_beltran_baseball_academy: {
-        "Domestic Health": 81832,
-        "Education": 130424,
-        "Final Consumption": 416043,
-        "Research and Development": 22573
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     leadership_christian_academy: {
-        "Domestic Health": 207917,
-        "Education": 144950,
-        "Final Consumption": 498433,
-        "Research and Development": 44736
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     pj_education_school: {
-        "Domestic Health": 32947,
-        "Education": 52362,
-        "Final Consumption": 134626,
-        "Research and Development": 3806
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     puerto_rico_baseball_academy: {
-        "Domestic Health": 7312,
-        "Education": 9504,
-        "Final Consumption": 34940,
-        "Research and Development": 6608
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     orange_lutheran: {
-        "Domestic Health": 15215,
-        "Education": 21368,
-        "Final Consumption": 72704,
-        "Research and Development": 2909
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     jserra_catholic: {
-        "Domestic Health": 15215,
-        "Education": 21368,
-        "Final Consumption": 72704,
-        "Research and Development": 2909
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     calvary_christian_academy: {
-        "Domestic Health": 15215,
-        "Education": 21368,
-        "Final Consumption": 72704,
-        "Research and Development": 2909
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     american_heritage: {
-        "Domestic Health": 15215,
-        "Education": 21368,
-        "Final Consumption": 72704,
-        "Research and Development": 2909
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     },
 
     tnxl_academy: {
-        "Domestic Health": 15215,
-        "Education": 21368,
-        "Final Consumption": 72704,
-        "Research and Development": 2909
+        "Rookie": 84241,
+        "A": 84241,
+        "A+": 68160,
+        "AA": 247409,
+        "AAA": 24918,
+        "MLB": 5,
     }, 
 };

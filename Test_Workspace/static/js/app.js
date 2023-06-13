@@ -35,6 +35,7 @@ d3.json(url).then(function (response) {
   myMap.addLayer(markers);
 
 // Create an array of each country's numbers
+let arkansas = Object.values(data.arkansas);
 let virginia = Object.values(data.virginia);
 let arizona = Object.values(data.arizona);
 let kentucky = Object.values(data.kentucky);
