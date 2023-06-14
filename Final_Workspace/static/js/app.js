@@ -1,7 +1,7 @@
 // Creating the map object
 let myMap = L.map("map", {
-  center: [40.7, -73.95],
-  zoom: 11
+  center: [37.0902, -95.7129],
+  zoom: 4
 });
 
 // Adding the tile layer
@@ -204,7 +204,7 @@ init2();
       
     let layout = {
         margin: {
-          l: 100,
+          l: 400,
           r: 100,
           t: 100,
           b: 100
@@ -219,7 +219,7 @@ init2();
           x: 0.05,
         },
         xaxis: { title: 'Number of Students Drafted' },
-        yaxis: { title: 'Schools' },
+        //yaxis: { title: 'Schools' },
       };
   
     Plotly.newPlot("bar", formattedData, layout);
@@ -259,13 +259,13 @@ init2();
           text:'Top 10 High Schools',
           font: {
             family: 'Courier New, monospace',
-            size: 24
+            size: 20
           },
           xref: 'paper',
           x: 0.05,
         },
         xaxis: { title: 'Number of Students Drafted' },
-        yaxis: { title: 'Schools' },
+        //yaxis: { title: 'Schools' },
       };
   
     Plotly.newPlot("bar2", formattedData, layout);

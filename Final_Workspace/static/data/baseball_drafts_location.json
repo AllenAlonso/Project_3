@@ -222,7 +222,7 @@
 "Tyler Esplin","HS","AA",2017,"IMG Academy (Bradenton,FL)",27.4989278,-82.5748194
 "Kirk McCarty","College","MLB",2017,"University of Southern Mississippi",31.3298668,-89.3334535
 "Jackson Tetreault","College","MLB",2017,"State College of Florida Manatee-Sarasota",27.336465,-82.5310117
-"Joel Urena","College","Rk",2017,"Monroe Community College",43.1013,77.6104
+"Joel Urena","College","Rk",2017,"Monroe Community College",43.1013,-77.6104
 "Tyler Thomas","College","AAA",2017,"Fresno State University",36.8136777,-119.7461767
 "Bryan Sammons","College","AAA",2017,"Western Carolina University",35.3090108,-83.1863612
 "Connor Ryan","College","A",2017,"University of Illinois-Chicago",41.8685636,-87.6484497
@@ -295,7 +295,7 @@
 "Austin Bernard","College","A+",2017,"Pepperdine University",34.0414045,-118.7095814
 "J.B. Olson","College","AAA",2017,"University of Oklahoma",35.1987162,-97.4448963
 "Beau Sulser","College","MLB",2017,"Dartmouth College",43.7044406,-72.2886934
-"Denis Karas","College","A",2017,"University of California",37.8702,122.2595
+"Denis Karas","College","A",2017,"University of California",37.8702,-122.2595
 "Jordan Floyd","College","Rk",2017,"Kansas State University",39.1974437,-96.5847249
 "Kyle Serrano","College","AA",2017,"University of Tennessee",35.9544013,-83.9294564
 "Chad Whitmer","College","A+",2017,"Southern Illinois University",37.7079717,-89.2229983
@@ -382,7 +382,7 @@
 "Michael Grove","College","MLB",2018,"West Virginia University",39.6480359,-79.9697147
 "Will Banfield","HS","AA",2018,"Brookwood (Snellville,GA)",33.8836398,-84.0400713
 "Jeremy Eierman","College","AA",2018,"Missouri State University",37.2005546,-93.2806806
-"Tanner Dodson","College","AA",2018,"University of California",37.8702,122.2595
+"Tanner Dodson","College","AA",2018,"University of California",37.8702,-122.2595
 "Josiah Gray","College","MLB",2018,"Le Moyne College",43.0497018,-76.0855042
 "Micah Bello","HS","A+",2018,"Hilo (Hilo,HI)",19.7216023,-155.084887
 "Grant Little","College","A+",2018,"Texas Tech University",33.5842591,-101.8782822
@@ -425,7 +425,7 @@
 "Dylan Coleman","College","MLB",2018,"Missouri State University",37.2005546,-93.2806806
 "Tristan Beck","College","MLB",2018,"Stanford University",37.4274745,-122.169719
 "Alfonso Rivas","College","MLB",2018,"University of Arizona",32.2318851,-110.9501094
-"Aaron Shortridge","College","AA",2018,"University of California",37.8702,122.2595
+"Aaron Shortridge","College","AA",2018,"University of California",37.8702,-122.2595
 "Drew Rom","HS","AAA",2018,"Highlands (Fort Thomas,KY)",39.0839642,-84.4497563
 "Sean Wymer","College","AA",2018,"Texas Christian University",32.7078531,-97.3628041
 "Nick Fortes","College","MLB",2018,"University of Mississippi",34.3647349,-89.5383818
@@ -512,7 +512,7 @@
 "Caberea Weaver","HS","A+",2018,"South Gwinnett (Snellville,GA)",33.8543367,-84.0069031
 "Jay Schuyler","College","AAA",2018,"University of San Diego",32.7721681,-117.1888625
 "Kevin Smith","College","AAA",2018,"University of Georgia",33.9566656,-83.375192
-"Jawuan Harris","College","A+",2018,"Rutgers University",40.5008,74.4474
+"Jawuan Harris","College","A+",2018,"Rutgers University",40.5008,-74.4474
 "Brooks Wilson","College","AAA",2018,"Stetson University",29.0335139,-81.3009245
 "Charlie Cerny","College","A+",2018,"University of Illinois-Chicago",41.8685636,-87.6484497
 "Brett Kinneman","College","A",2018,"North Carolina State University",35.7850744,-78.6812824
@@ -578,7 +578,7 @@
 "Logan Stoelke","College","A+",2018,"University of Louisiana at Lafayette",30.211991,-92.019914
 "Kevin Magee","College","A+",2018,"St. John's University",40.7201737,-73.7978908
 "Jake Brodt","College","AA",2018,"Santa Clara University",37.3489255,-121.9367804
-"Jake Walters","College","AAA",2018,"University of Alabama",33.2114,87.5401
+"Jake Walters","College","AAA",2018,"University of Alabama",33.2114,-87.5401
 "Keegan McGovern","College","AA",2018,"University of Georgia",33.9566656,-83.375192
 "Chandler Sanburn","College","A-",2018,"Wichita State University",37.7191442,-97.2899421
 "Nick Lee","College","A-",2018,"University of Louisiana at Lafayette",30.211991,-92.019914
@@ -606,7 +606,7 @@
 "Brett Langhorne","College","A+",2018,"Carson-Newman University",36.1218768,-83.4906048
 "Clark Cota","College","A",2018,"The University of North Carolina Wilmington",34.223874,-77.8696036
 "Mike Gretler","College","A+",2018,"Oregon State University",44.5637806,-123.2794442
-"Dallas Litscher","College","A",2018,"Saint Catharine College",51.7565758,-1.244571611
+"Dallas Litscher","College","A",2018,"Saint Katherine College",33.1383,-117.1607
 "Cal Stevenson","College","MLB",2018,"University of Arizona",32.2318851,-110.9501094
 "Tanner Andrews","College","AAA",2018,"Purdue University",40.4237054,-86.9211946
 "Matt Sanders","College","AA",2018,"Troy University",31.8025926,-85.9571615
@@ -623,12 +623,12 @@
 "Nick Dalesandro","College","AA",2018,"Purdue University",40.4237054,-86.9211946
 "Grant Williams","College","AAA",2018,"Kennesaw State University",34.0234337,-84.6154897
 "Carson Shaddy","College","A-",2018,"University of Arkansas",36.0686895,-94.1748471
-"Chandler Taylor","College","AAA",2018,"University of Alabama",33.2114,87.5401
+"Chandler Taylor","College","AAA",2018,"University of Alabama",33.2114,-87.5401
 "Robert Broom","College","AAA",2018,"Mercer University",32.8284878,-83.6496991
 "Deacon Liput","College","AAA",2018,"University of Florida",29.6436325,-82.3549302
 "Adley Rutschman","College","MLB",2019,"Oregon State University",44.5637806,-123.2794442
 "Bobby Witt","HS","MLB",2019,"Colleyville Heritage (Colleyville,TX)",32.8876453,-97.1032492
-"Andrew Vaughn","College","MLB",2019,"University of California",37.8702,122.2595
+"Andrew Vaughn","College","MLB",2019,"University of California",37.8702,-122.2595
 "JJ Bleday","College","MLB",2019,"Vanderbilt University",36.1447034,-86.8026551
 "Riley Greene","HS","MLB",2019,"Hagerty (Oviedo,FL)",28.625119,-81.1779838
 "CJ Abrams","HS","MLB",2019,"Blessed Trinity Catholic (Roswell,GA)",34.055562,-84.390835
@@ -657,7 +657,7 @@
 "Logan Davidson","College","AA",2019,"Clemson University",34.673407,-82.8367119
 "Anthony Volpe","HS","MLB",2019,"Delbarton (Morristown,NJ)",40.7882833,-74.5312312
 "Michael Busch","College","MLB",2019,"University of North Carolina",35.9049122,-79.0469134
-"Korey Lee","College","MLB",2019,"University of California",37.8702,122.2595
+"Korey Lee","College","MLB",2019,"University of California",37.8702,-122.2595
 "Brennan Malone","HS","A",2019,"IMG Academy (Bradenton,FL)",27.4989278,-82.5748194
 "Drey Jameson","College","MLB",2019,"Ball State University",40.2079938,-85.4134775
 "Kameron Misner","College","AAA",2019,"University of Missouri",38.9403808,-92.3277375
@@ -802,7 +802,7 @@
 "Graham Ashcraft","College","MLB",2019,"University of Alabama-Birmingham",33.5020323,-86.8057495
 "Cody Bradford","College","MLB",2019,"Baylor University",31.5500848,-97.11354
 "Dilan Rosario","HS","AAA",2019,"Leadership Christian Academy (Guaynabo,PR)",18.3741573,-66.0973627
-"Cam Eden","College","AAA",2019,"University of California",37.8702,122.2595
+"Cam Eden","College","AAA",2019,"University of California",37.8702,-122.2595
 "Zach Ashford","College","AA",2019,"Fresno State University",36.8136777,-119.7461767
 "Sawyer Gipson-Long","College","AA",2019,"Mercer University",32.8284878,-83.6496991
 "Andrew Schultz","College","AA",2019,"University of Tennessee",35.9544013,-83.9294564
@@ -844,7 +844,7 @@
 "Adam Macko","HS","A+",2019,"Vauxhall (Crowsnest pass,AB)",49.6061343,-114.520425
 "Darius Vines","College","AAA",2019,"Cal State Bakersfield",35.3486641,-119.1033448
 "Jake Guenther","College","A+",2019,"Texas Christian University",32.7078531,-97.3628041
-"Jared Horn","College","Rk",2019,"University of California",37.8702,122.2595
+"Jared Horn","College","Rk",2019,"University of California",37.8702,-122.2595
 "Xzavion Curry","College","MLB",2019,"Georgia Tech",33.7756178,-84.396285
 "Nick Robertson","College","AAA",2019,"James Madison University ",38.435092,-78.8697548
 "Brad Deppermann","College","A+",2019,"University of North Florida ",30.2661204,-81.5072314
@@ -1008,7 +1008,7 @@
 "Kyle Manzardo","College","AAA",2021,"Washington State University",46.7298283,-117.1745403
 "Lonnie White","HS","Rk",2021,"Malvern Preparatory School (Malvern,PA)",40.027949,-75.511656
 "Reed Trimble","College","A+",2021,"University of Southern Mississippi",31.3298668,-89.3334535
-"Peyton Wilson","College","AA",2021,"University of Alabama",33.2114,87.5401
+"Peyton Wilson","College","AA",2021,"University of Alabama",33.2114,-87.5401
 "Adrian Del Castillo","College","AA",2021,"University of Miami",25.7616798,-80.1917902
 "Joe Rock","College","AA",2021,"Ohio University",39.324358,-82.1013889
 "Tommy Mace","College","A+",2021,"University of Florida",29.6436325,-82.3549302
@@ -1016,7 +1016,7 @@
 "Robert Gasser","College","AAA",2021,"University of Houston",29.7199489,-95.3422334
 "Bubba Chandler","HS","A+",2021,"North Oconee (Bogart,GA)",33.8772452,-83.523445
 "Cameron Cauley","HS","A",2021,"Barbers Hill (Mount Belvieu,TX)",29.8166014,-94.8313257
-"Dylan Smith","College","AA",2021,"University of Alabama",33.2114,87.5401
+"Dylan Smith","College","AA",2021,"University of Alabama",33.2114,-87.5401
 "Tyler McDonough","College","AA",2021,"North Carolina State University",35.7850744,-78.6812824
 "John Rhodes","College","AA",2021,"University of Kentucky",38.0306511,-84.5039697
 "Jacob Steinmetz","HS","A",2021,"Central Florida Elev8 (Delray Beach,FL)",26.4318726,-80.0759815
@@ -1049,7 +1049,7 @@
 "Tyler Mattison","College","A+",2021,"Bryant University",41.9220919,-71.5377265
 "Elmer Rodriguez-Cruz","HS","A",2021,"Leadership Christian Academy (Guaynabo,PR)",18.3741573,-66.0973627
 "Donta' Williams","College","AA",2021,"University of Arizona",32.2318851,-110.9501094
-"Chad Patrick","College","AA",2021,"Purdue University Northwest",41.5808,87.4724
+"Chad Patrick","College","AA",2021,"Purdue University Northwest",41.5808,-87.4724
 "Shane Panzini","HS","A",2021,"Red Bank Catholic (Red Bank,NJ)",40.3483745,-74.0653983
 "Hunter Goodman","College","AA",2021,"University of Memphis",35.1187498,-89.9374928
 "Luke Murphy","College","AA",2021,"Vanderbilt University",36.1447034,-86.8026551
@@ -1106,7 +1106,7 @@
 "Mason Auer","College","AA",2021,"San Jacinto College: Central Campus",29.661672,-95.1148778
 "Ben Casparius","College","AA",2021,"University of Connecticut",41.8067,-72.2522
 "Mike Jarvis","College","AAA",2021,"San Diego State University",32.7774047,-117.0714068
-"Chase Lee","College","AAA",2021,"University of Alabama",33.2114,87.5401
+"Chase Lee","College","AAA",2021,"University of Alabama",33.2114,-87.5401
 "Austin Murr","College","A+",2021,"North Carolina State University",35.7850744,-78.6812824
 "Daniel McElveny","HS","A",2021,"Bonita Vista (Chula Vista,CA)",32.6459088,-116.9995559
 "Collin Burns","College","A+",2021,"Tulane University",29.9407282,-90.1203167
@@ -1121,7 +1121,7 @@
 "Seth Lonsway","College","A+",2021,"Ohio State University",40.0066723,-83.0304546
 "Carlos F. Rodriguez","College","AA",2021,"Florida SouthWestern State College",26.5516108,-81.8892892
 "Spencer Arrighetti","College","AA",2021,"University of Louisiana at Lafayette",30.211991,-92.019914
-"Sam Praytor","College","A",2021,"University of Alabama",33.2114,87.5401
+"Sam Praytor","College","A",2021,"University of Alabama",33.2114,-87.5401
 "Justice Thompson","College","A+",2021,"University of North Carolina",35.9049122,-79.0469134
 "Alfredo Ruiz","College","A+",2021,"Long Beach State University",33.7838235,-118.1140904
 "Hayden Juenger","College","AAA",2021,"Missouri State University",37.2005546,-93.2806806
@@ -1130,7 +1130,7 @@
 "Taylor Broadway","College","AAA",2021,"University of Mississippi",34.3647349,-89.5383818
 "Aaron Davenport","College","A+",2021,"University Of Hawaii",21.3008904,-157.8173481
 "Justyn-Henry Malloy","College","AAA",2021,"Georgia Tech",33.7756178,-84.396285
-"Grant Holman","College","AA",2021,"University of California",37.8702,122.2595
+"Grant Holman","College","AA",2021,"University of California",37.8702,-122.2595
 "Travis Adams","College","AA",2021,"Sacramento State",38.564761,-121.4276493
 "Ryan Bergert","College","A+",2021,"West Virginia University",39.6480359,-79.9697147
 "Mason Montgomery","College","AA",2021,"Texas Tech University",33.5842591,-101.8782822
@@ -1165,7 +1165,7 @@
 "Ryan Och","College","A+",2021,"University of Southern Mississippi",31.3298668,-89.3334535
 "Logan Workman","College","AA",2021,"Lee University",35.1657076,-84.869763
 "Ryan Sublette","College","AA",2021,"Texas Tech University",33.5842591,-101.8782822
-"Sean Sullivan","College","AA",2021,"University of California",37.8702,122.2595
+"Sean Sullivan","College","AA",2021,"University of California",37.8702,-122.2595
 "Larson Kindreich","College","A+",2021," Biola University",33.9062611,-118.0155533
 "Jordan Marks","College","A+",2021,"University of South Carolina Upstate",34.9996102,-81.9711555
 "Hunter Dobbins","College","A+",2021,"Texas Tech University",33.5842591,-101.8782822
@@ -1178,7 +1178,7 @@
 "Will Frizzell","College","AA",2021,"Texas A&M University",30.6186806,-96.3364655
 "James Parker","College","AAA",2021,"Clemson University",34.673407,-82.8367119
 "Jason Ruffcorn","College","A+",2021,"University of Oklahoma",35.1987162,-97.4448963
-"Ian Villers","College","A",2021,"University of California",37.8702,122.2595
+"Ian Villers","College","A",2021,"University of California",37.8702,-122.2595
 "Zack Raabe","College","A+",2021,"University of Minnesota",44.97399,-93.2277285
 "Colton Gordon","College","AA",2021,"University of Central Florida",28.6024274,-81.2000599
 "Patrick Monteverde","College","AA",2021,"Texas Tech University",33.5842591,-101.8782822
@@ -1235,7 +1235,7 @@
 "Zach Kokoska","College","A+",2021,"Kansas State University",39.1974437,-96.5847249
 "Andrew Peters","College","A",2021,"University of South Carolina",33.9937575,-81.0299186
 "Keyshawn Askew","College","A+",2021,"Clemson University",34.673407,-82.8367119
-"Darren Baker","College","AAA",2021,"University of California",37.8702,122.2595
+"Darren Baker","College","AAA",2021,"University of California",37.8702,-122.2595
 "Jordan Jackson","College","A+",2021,"Georgia Southern University",32.4196512,-81.7842919
 "Logan Cerny","College","A+",2021,"Troy University",31.8025926,-85.9571615
 "Vaun Brown","College","AA",2021,"Florida Southern College",28.0314545,-81.9450401
@@ -1256,7 +1256,7 @@
 "Michael Hobbs","College","A+",2021,"St. Mary's College of California",37.8408837,-122.1089374
 "Jackson Holliday","HS","A+",2022,"Stillwater (Stillwater,OK)",36.1156071,-97.0583681
 "Druw Jones","HS","A",2022,"The Wesleyan School (Norcross,GA)",33.9712756,-84.2164971
-"Kumar Rocker","FA","A+",2022,"New York University",44.7295,73.9965
+"Kumar Rocker","FA","A+",2022,"New York University",44.7295,-73.9965
 "Termarr Johnson","HS","A",2022,"Mays (Atlanta,GA)",33.742333,-84.5035107
 "Elijah Green","HS","A",2022,"IMG Academy (Bradenton,FL)",27.4989278,-82.5748194
 "Jacob Berry","College","A+",2022,"Louisiana State University",30.4132579,-91.1800023
@@ -1286,7 +1286,7 @@
 "Reggie Crawford","College","A",2022,"University of Connecticut",41.8067,-72.2522
 "Sterlin Thompson","College","A+",2022,"University of Florida",29.6436325,-82.3549302
 "Sal Stewart","HS","A",2022,"Westminster Christian (Miami,FL)",25.6313466,-80.3025046
-"Dylan Beavers","College","A+",2022,"University of California",37.8702,122.2595
+"Dylan Beavers","College","A+",2022,"University of California",37.8702,-122.2595
 "Landon Sims","College","College",2022,"Mississippi State University",33.4551742,-88.7943766
 "JR Ritchie","HS","A",2022,"Bainbridge (Bainbridge,GA)",30.8908588,-84.5744735
 "Thomas Harrington","College","A+",2022,"Campbell University",35.408157,-78.7397718
@@ -1301,7 +1301,7 @@
 "Jake Bennett","College","A",2022,"University of Oklahoma",35.1987162,-97.4448963
 "Jacob Miller","HS","A",2022,"Liberty Union (Baltimore,OH)",39.8496042,-82.6267345
 "Jackson Ferris","HS","A",2022,"IMG Academy (Bradenton,FL)",27.4989278,-82.5748194
-"Connor Prielipp","College","A+",2022,"University of Alabama",33.2114,87.5401
+"Connor Prielipp","College","A+",2022,"University of Alabama",33.2114,-87.5401
 "Cayden Wallace","College","A+",2022,"University of Arkansas",36.0686895,-94.1748471
 "Jackson Cox","HS","A",2022,"Toutle Lake (Toutle,WA)",46.3221659,-122.4467962
 "Peyton Graham","College","A",2022,"University of Oklahoma",35.1987162,-97.4448963
@@ -1361,14 +1361,14 @@
 "Alex Freeland","College","A+",2022,"University of Central Florida",28.6024274,-81.2000599
 "William Kempner","College","A",2022,"Gonzaga University",47.6658548,-117.4021153
 "Silas Ardoin","College","A+",2022,"University of Texas",30.2849185,-97.7340567
-"Dylan Ray","College","A+",2022,"University of Alabama",33.2114,87.5401
+"Dylan Ray","College","A+",2022,"University of Alabama",33.2114,-87.5401
 "Brock Porter","HS","A",2022,"Orchard Lake St Mary's Prep (Orchard Lake,MI)",42.5962573,-83.3577356
 "Michael Kennedy","HS","--",2022,"Troy (Troy,NY)",42.726935,-73.671731
 "Brenner Cox","HS","A",2022,"Rock Hill (Frisco,TX)",33.2154829,-96.888343
 "Marcus Johnson","College","A",2022,"Duke University",36.0014258,-78.9382286
 "Nazier Mule","HS","--",2022,"Passaic County Technical Institute (Wayne,NJ)",40.9303431,-74.2033627
 "Andrew Morris","College","A",2022,"Texas Tech University",33.5842591,-101.8782822
-"Steven Zobac","College","A",2022,"University of California",37.8702,122.2595
+"Steven Zobac","College","A",2022,"University of California",37.8702,-122.2595
 "Ryan Ritter","College","A",2022,"University of Kentucky",38.0306511,-84.5039697
 "Troy Melton","College","A+",2022,"San Diego State University",32.7774047,-117.0714068
 "Jake Madden","College","A",2022,"Northwest Florida State College",30.5392334,-86.4768507
@@ -1395,7 +1395,7 @@
 "Chandler Pollard","HS","Rk",2022,"Woodward Academy (College Park,GA)",33.6628164,-84.4419799
 "Tres Gonzalez","College","A+",2022,"Georgia Tech",33.7756178,-84.396285
 "Jared McKenzie","College","A+",2022,"Baylor University",31.5500848,-97.11354
-"Josh White","College","A+",2022,"University of California",37.8702,122.2595
+"Josh White","College","A+",2022,"University of California",37.8702,-122.2595
 "Brandon Birdsell","College","A+",2022,"Texas Tech University",33.5842591,-101.8782822
 "Ben Ross","College","A+",2022,"Notre Dame College",41.5074591,-81.5164707
 "Hunter Patteson","College","College",2022,"University of Central Florida",28.6024274,-81.2000599
@@ -1403,7 +1403,7 @@
 "Luke Gold","College","A",2022,"Boston College",42.3355488,-71.1684945
 "Sonny DiChiara","College","AA",2022,"Auburn University",32.5933574,-85.4951663
 "D'Andre Smith","College","A",2022,"University of Southern California",34.0223519,-118.285117
-"Nathan Martorella","College","A+",2022,"University of California",37.8702,122.2595
+"Nathan Martorella","College","A+",2022,"University of California",37.8702,-122.2595
 "Guy Lipscomb","College","A",2022,"Belmont University",36.1329081,-86.7941702
 "Orion Kerkering","College","A+",2022,"University of South Florida",28.0587031,-82.4138539
 "Cade Hunter","College","A",2022,"Virginia Tech",37.2283843,-80.4234167
@@ -1484,7 +1484,7 @@
 "Matt Brosky","College","AA",2022,"Youngstown State University",41.1066413,-80.6480952
 "Cy Nielson","College","A+",2022,"Brigham Young University ",40.2518435,-111.6493156
 "Chance Huff","College","A+",2022,"Georgia Tech",33.7756178,-84.396285
-"Dale Stanavich","College","A",2022,"Rutgers University",40.5008,74.4474
+"Dale Stanavich","College","A",2022,"Rutgers University",40.5008,-74.4474
 "Mason McGwire","HS","--",2022,"Capistrano Valley (Mission Viejo,CA)",33.5415426,-117.6697936
 "Zebby Matthews","College","A",2022,"Western Carolina University",35.3090108,-83.1863612
 "Davis Palermo","College","A",2022,"University of North Carolina",35.9049122,-79.0469134
@@ -1528,7 +1528,7 @@
 "Caeden Trenkle","College","A+",2022,"Oklahoma State University",36.1270236,-97.0737222
 "Cory Acton","College","A+",2022,"University of Georgia",33.9566656,-83.375192
 "Tyler Gough","HS","A",2022,"JSerra Catholic (San Juan Capistrano,CA)",33.5208645,-117.6682319
-"Joseph King","College","A",2022,"University of California",37.8702,122.2595
+"Joseph King","College","A",2022,"University of California",37.8702,-122.2595
 "Devereaux Harrison","College","A+",2022,"Long Beach State University",33.7838235,-118.1140904
 "Brooks Brannon","HS","Rk",2022,"Randleman (Randleman,NC)",35.8179143,-79.8030873
 "Matt Keating","College","A",2022,"University of Southern California",34.0223519,-118.285117
@@ -1563,7 +1563,7 @@
 "Isaac Coffey","College","A+",2022,"Oral Roberts University",36.0508093,-95.9528284
 "Will Brian","College","A",2022,"Eastern Kentucky University",37.7359731,-84.2987483
 "Tim Elko","College","A",2022,"University of Mississippi",34.3647349,-89.5383818
-"Brian Fitzpatrick","College","Rk",2022,"Rutgers University",40.5008,74.4474
+"Brian Fitzpatrick","College","Rk",2022,"Rutgers University",40.5008,-74.4474
 "Zach Cole","College","A",2022,"Ball State University",40.2079938,-85.4134775
 "Cade Halemanu","College","A",2022,"University Of Hawaii",21.3008904,-157.8173481
 "Simon Reid","College","Rk",2022,"Westmont College",34.4488434,-119.6610313
