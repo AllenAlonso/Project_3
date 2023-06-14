@@ -1,0 +1,11 @@
+"json_agg"
+"[{""school"":""IMG Academy (Bradenton,FL)"",""rk"":1,""a"":3,""ap"":2,""aa"":4,""aaa"":0,""mlb"":0,""total"":10}, 
+ {""school"":""Carlos Beltran Baseball Academy (Florida,PR)"",""rk"":3,""a"":0,""ap"":0,""aa"":2,""aaa"":0,""mlb"":0,""total"":5}, 
+ {""school"":""Leadership Christian Academy (Guaynabo,PR)"",""rk"":0,""a"":2,""ap"":0,""aa"":1,""aaa"":1,""mlb"":1,""total"":5}, 
+ {""school"":""Puerto Rico Baseball Academy (Gurabo,PR)"",""rk"":0,""a"":2,""ap"":2,""aa"":0,""aaa"":0,""mlb"":0,""total"":4}, 
+ {""school"":""PJ Education School (Carolina,PR)"",""rk"":1,""a"":2,""ap"":0,""aa"":0,""aaa"":0,""mlb"":1,""total"":4}, 
+ {""school"":""Orange Lutheran (Orange,CA)"",""rk"":0,""a"":2,""ap"":0,""aa"":0,""aaa"":1,""mlb"":0,""total"":3}, 
+ {""school"":""Georgia Premier Academy (Statesboro,GA)"",""rk"":0,""a"":0,""ap"":1,""aa"":1,""aaa"":0,""mlb"":0,""total"":3}, 
+ {""school"":""TNXL Academy (Longwood,Fl)"",""rk"":0,""a"":2,""ap"":0,""aa"":0,""aaa"":0,""mlb"":0,""total"":3}, 
+ {""school"":""American Heritage (Plantation,FL)"",""rk"":0,""a"":1,""ap"":0,""aa"":0,""aaa"":0,""mlb"":2,""total"":3}, 
+ {""school"":""JSerra Catholic (San Juan Capistrano,CA)"",""rk"":0,""a"":1,""ap"":1,""aa"":0,""aaa"":0,""mlb"":1,""total"":3}]"
