@@ -1,0 +1,11 @@
+"json_agg"
+"[{""school"":""University of Arkansas"",""rk"":2,""a"":3,""ap"":7,""aa"":8,""aaa"":6,""mlb"":2,""total"":29}, 
+ {""school"":""University of Louisville"",""rk"":0,""a"":2,""ap"":7,""aa"":6,""aaa"":6,""mlb"":3,""total"":24}, 
+ {""school"":""University of Florida"",""rk"":0,""a"":1,""ap"":7,""aa"":3,""aaa"":3,""mlb"":6,""total"":23}, 
+ {""school"":""Texas Tech University"",""rk"":1,""a"":2,""ap"":7,""aa"":7,""aaa"":1,""mlb"":3,""total"":21}, 
+ {""school"":""Oregon State University"",""rk"":0,""a"":1,""ap"":6,""aa"":4,""aaa"":2,""mlb"":6,""total"":20}, 
+ {""school"":""University of Tennessee"",""rk"":0,""a"":3,""ap"":6,""aa"":7,""aaa"":3,""mlb"":1,""total"":20}, 
+ {""school"":""Vanderbilt University"",""rk"":0,""a"":4,""ap"":3,""aa"":7,""aaa"":3,""mlb"":3,""total"":20}, 
+ {""school"":""University of Kentucky"",""rk"":0,""a"":3,""ap"":3,""aa"":3,""aaa"":4,""mlb"":6,""total"":19}, 
+ {""school"":""University of Arizona"",""rk"":0,""a"":2,""ap"":2,""aa"":7,""aaa"":1,""mlb"":6,""total"":18}, 
+ {""school"":""University of Virginia"",""rk"":0,""a"":0,""ap"":1,""aa"":3,""aaa"":4,""mlb"":8,""total"":18}]"
