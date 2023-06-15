@@ -28,7 +28,7 @@ templates:
 
 powerpoint slidedeck:
 
--final_slidedeck
+-Project.3 PDF
   
 
   
