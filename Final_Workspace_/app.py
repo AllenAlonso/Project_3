@@ -25,7 +25,7 @@ def main_page():
     Currently, the only api route accessed by the web page is 'passengersbyclass'.
     """
     return render_template('index.html')
-
+# grabs top 10 highschool player data for the drop down 
 @app.route("/highschool")
 def high_school():
     with open("static/data/the_top_10_HS.json") as hsdata:
