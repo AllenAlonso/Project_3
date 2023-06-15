@@ -8,6 +8,31 @@ Allen's work- Allen workspace
 
 Final_Workspace_ = Final Project Submission!
 
+Wihtin Final_Workspace_ 
+
+raw_data:
+
+- Scraped Data from https://www.thebaseballcube.com/content/draft/
+  
+- Cleaned Data : How Data was cleaned & Put into postgres SQLserver, Merged, And Data Base created
+
+static:
+
+-CSS
+-data (3 folders of data used in app)
+-js (app.js & data.js)
+
+templates:
+
+-index.html
+
+powerpoint slidedeck:
+
+-final_slidedeck
+  
+
+  
+
 
 
 
