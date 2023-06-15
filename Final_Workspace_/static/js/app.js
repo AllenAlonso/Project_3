@@ -27,7 +27,7 @@ d3.json(url).then(function (response) {
   response.forEach(draft => {
     if (draft.PlayerName) {
       let loc = [draft.Latitude, draft.Longitude]
-      markers.addLayer(L.marker(loc).bindPopup(draft.School))
+      markers.addLayer(L.marker(loc).bindPopup(`<h1>${draft.PlayerName}</h1><hr><h3>${draft.School}, ${draft.HighLevel}</h3>`))
     }
   })
 
@@ -116,7 +116,7 @@ function updatePlotly2(newdata) {
 init2();
 
   // Add initial meta-data 1
-  let metaDiv = d3.select(".panel-body");
+  let metaDiv = d3.select("#metaDiv");
 
   let personMetadata = data['img_academy']
   
@@ -128,7 +128,7 @@ init2();
   metaDiv.append('p').text('MLB: ' + personMetadata["MLB"]);
 
   //  Add initial meta-data 2
-  let metaDiv2 = d3.select(".panel-body2");
+  let metaDiv2 = d3.select("#metaDiv2");
 
   let personMetadata2 = data['arkansas']
   
