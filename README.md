@@ -1,20 +1,41 @@
-# Project_3
+A Baseball Story
 
-What is the most effective route for a highschool baseball player to take to become drafted into professional baseball?
+Project 3
 
-Based on the following data collected:
+By: Allen, Matt & Cole
 
-
-
-What top two states have produced the most MLB draft picks (rounds 1-10) in the past 5 years?
-2017-2022 MLB drafts ~300 data points per year
+The most effective route for a highschool baseball player to take to get drafted into professional baseball looking at the following factors:
 
 
-How does the school the players attend affect the players chances of getting drafted? (Highschool vs College)
-Top 10 High schools
-Top 10 Colleges
+Leaving to play baseball at the highschool or college level: How many players were drafted from the top 10 High Schools vs top 10 Colleges
 
-What is the funding like for the regions
-Compare the highest funded High School District, high vs low draft pick rates
-Compare Sports funding for Colleges, high vs low draft pick rates
+Out of those schools, what level of professional baseball did those players end up playing at? 
 
+The Data: A brief step by step
+
+Scraping the data from thebaseballcube.com, specifically the last 5 years of MLB draft history off the webpage. 
+Cleaning the data using Python and analyzing for only relevant data 
+Player Name
+Type of school
+School Name
+Highest Level of Play
+Year drafted
+Housing the database in Postgres, we broke down the top 10 colleges and top 10 High schools and Utilizing SQLite to eventually transfer our data onto the webpage
+Adding Latitude and Longitude to the schools locations using SQL in Postgres to eventually map onto the webpage
+
+Conclusion: Dashboard + Synopsis
+
+College Baseball is the most effective route for the overwhelming majority of players looking to get drafted into the MLB 
+
+Roughly 20% of players that made it to the high level were drafted out of highschool
+Roughly 80% of players that made it to the high level were drafted out of college
+
+
+Top High School to get drafted into any level of professional play: IMG Academy (10 players)
+Top High School for highest chance to get into the MLB: American Heritage (66.7%*)
+
+
+Top College to get drafted into any level of professional play: University of Arkansas (28 players)
+Top College for highest chance to get into the MLB: University of Virginia (50%)
+
+(Roughly 1500 Data points used)
