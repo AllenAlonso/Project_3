@@ -27,7 +27,7 @@ d3.json(url).then(function (response) {
   response.forEach(draft => {
     if (draft.PlayerName) {
       let loc = [draft.Latitude, draft.Longitude]
-      markers.addLayer(L.marker(loc).bindPopup(draft.School))
+      markers.addLayer(L.marker(loc).bindPopup(`<h1>${draft.PlayerName}</h1><hr><h3>${draft.School}, ${draft.HighLevel}</h3>`))
     }
   })
 
